@@ -8,6 +8,9 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "deploy": "eb deploy",
+    "init": "eb init -r eu-west-1 --profile aws-rs-cli",
+    "create": "eb create dev01 --single --cname igoryushchenko-cart-api-dev1",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",

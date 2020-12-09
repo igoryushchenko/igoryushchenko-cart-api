@@ -1,0 +1,17 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+# prevent local modules from being copied onto Docker image
+# and possibly overwriting modules installed within your image.
+node_modules
+
+# prevent debug logs from being copied onto Docker image.
+npm-debug.log
+
+# IDE working files
+.idea
+
+# not needed for the build itself
+test
+
+# ignore local build
+dist
